@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider Video</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" href="video.png" type="image/x-icon" />
+  </head>
+  <body>
+    <section>
+      <div class="bannerVideo" id="slideShow">
+        <video class="active" src="img/video1.mp4" autoplay muted loop></video>
+        <video src="img/video2.mp4" autoplay muted loop></video>
+        <video src="img/video3.mp4" autoplay muted loop></video>
+        <video src="img/video4.mp4" autoplay muted loop></video>
+      </div>
+      <div class="container">
+        <header id="navbar">
+          <a href="#" class="logo">World</a>
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <span class="menuIcon" onclick="toggleMenu()"></span>
+        </header>
+        <div class="content">
+          <div class="bannerText" id="slideShowText">
+            <div class="active">
+              <h2>Tokyo</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores, nobis nulla, fugiat neque nemo corrupti tempore
+                sapiente repellat laborum reprehenderit explicabo nesciunt
+                eveniet doloremque excepturi
+              </p>
+            </div>
+            <div>
+              <h2>París</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores, nobis nulla, fugiat neque nemo corrupti tempore
+                sapiente repellat laborum reprehenderit explicabo nesciunt
+                eveniet doloremque excepturi
+              </p>
+            </div>
+            <div>
+              <h2>Egypt</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores, nobis nulla, fugiat neque nemo corrupti tempore
+                sapiente repellat laborum reprehenderit explicabo nesciunt
+                eveniet doloremque excepturi
+              </p>
+            </div>
+            <div>
+              <h2>Maldives</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores, nobis nulla, fugiat neque nemo corrupti tempore
+                sapiente repellat laborum reprehenderit explicabo nesciunt
+                eveniet doloremque excepturi
+              </p>
+            </div>
+          </div>
+        </div>
+        <ul class="controls">
+          <li onclick="PrevVideo();PrevSlideText();">
+            <img src="img/left.png" />
+          </li>
+          <li onclick="NextVideo();NextSlideText();">
+            <img src="img/right.png" />
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
